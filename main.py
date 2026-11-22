@@ -13,6 +13,7 @@ it a root-owned output directory inside a sticky parent.
 
 import hashlib
 import os
+import shutil
 import sys
 
 TEXT = (
@@ -28,14 +29,15 @@ def main() -> int:
     os.makedirs(out_dir, exist_ok=True)
 
     # Clear only the CONTENTS of the output directory, never the dir itself.
+    # Symlinks are unlinked, never followed, so a link pointing outside the
+    # output directory cannot make us delete anything beyond it; real
+    # directories are removed whole, however deeply nested they are.
     for name in os.listdir(out_dir):
         path = os.path.join(out_dir, name)
-        if os.path.isdir(path) and not os.path.islink(path):
-            for sub in os.listdir(path):
-                os.remove(os.path.join(path, sub))
-            os.rmdir(path)
-        else:
+        if os.path.islink(path) or not os.path.isdir(path):
             os.remove(path)
+        else:
+            shutil.rmtree(path)
 
     data = TEXT.encode("utf-8")
     target = os.path.join(out_dir, "entry.txt")
