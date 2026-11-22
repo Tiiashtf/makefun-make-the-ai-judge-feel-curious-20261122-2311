@@ -1,6 +1,8 @@
 # Make the AI judge feel curious
 
-[![make.fun](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun/bounty/make-the-ai-judge-feel-curious-20261122-2311)
+[![make.fun · make-the-ai-judge-feel-curious-20261122-2311](https://make.fun/badge/make-the-ai-judge-feel-curious-20261122-2311.svg)](https://make.fun/bounty/make-the-ai-judge-feel-curious-20261122-2311?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-curious-20261122-2311)
+[![rank](https://make.fun/badge/make-the-ai-judge-feel-curious-20261122-2311/Tiiashtf/makefun-make-the-ai-judge-feel-curious-20261122-2311/rank.svg)](https://make.fun/bounty/make-the-ai-judge-feel-curious-20261122-2311/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-curious-20261122-2311)
+[![reward](https://make.fun/badge/make-the-ai-judge-feel-curious-20261122-2311/Tiiashtf/makefun-make-the-ai-judge-feel-curious-20261122-2311/reward.svg)](https://make.fun/bounty/make-the-ai-judge-feel-curious-20261122-2311?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-curious-20261122-2311)
 [![license: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![python 3.13](https://img.shields.io/badge/python-3.13-blue)](main.py)
 
